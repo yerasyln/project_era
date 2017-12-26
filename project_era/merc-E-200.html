@@ -1,0 +1,235 @@
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title></title>
+	<link rel = "stylesheet" href= "style.css">
+
+	
+	
+</head>
+<body>
+	<div class="section-1">
+	<div class="menu">
+		<a id ="logo1" href="main.html"><img id="logo" src="src/logo.png"></a>
+	  	<a id="home" href="main.html">Home</a>
+	  	<button id="buy_js" onclick="document.getElementById('id_buy').style.display='block'" style="width:auto;" >Buy</button> 
+	  	<button id="sell_js" onclick="document.getElementById('id_sell').style.display='block'" style="width:auto;">Sell</button> 
+	  	<button id="sell_js" onclick="document.getElementById('id_about').style.display='block'" style="width:auto;">About us</button>
+	  	<button id ="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</button>
+	</div>
+	<div class="option1">
+		<div class="desc1">
+			<span>Mercedes-Benz E 200 2010 года</span>
+			<span>4,500,000KZT</span>
+		</div>
+		<div class="info1">
+			<div class="left1">
+				<div class="left-1-1">
+					<span>Город</span>
+					<span>Кузов</span>
+					<span>Объем двигателя</span>
+					<span>Коробка передач</span>
+					<span>Руль</span>
+					<span>Привод</span>
+					<span>Растаможен</span>
+				</div>
+				<div class="left-1-2">
+					<span>Караганда</span>
+					<span>седан</span>
+					<span>2(бензин)</span>
+					<span>автомат</span>
+					<span>Слева</span>
+					<span>задний привод</span>
+					<span>да</span>
+				</div>
+				<div class="left-1-bot">
+					<span>литые диски, тонировка, ксенон, биксенон, хрустальная оптика, линзованная оптика, дневные ходовые огни, противотуманки, корректор фар, обогрев зеркал, кожа, аудиосистема, bluetooth, CD, MP3, ГУР, ABS, SRS, спортивный режим, иммобилайзер, полный электропакет, центрозамок, кондиционер, климат-контроль, круиз-контроль, бортовой компьютер, мультируль, подогрев сидений, парктроники, датчик света, датчик дождя, датчик давления в шинах, налог уплачен, техосмотр пройден, вложений не требует</span>
+				</div>
+			</div>
+			<div class="right1">
+				<div class="bigger">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/6-408x306.jpg" id="big">
+				</div>
+
+				<div class="small">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/3-408x306.jpg" onclick="change(event)">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/14-408x306.jpg" onclick="change(event)">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/11-408x306.jpg" onclick="change(event)">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/12-408x306.jpg" onclick="change(event)">
+					<img src="https://alakt-photos-kl.kcdn.kz/7b/cd5e9351f4731335d9069a9e0bf7db/22-408x306.jpg" onclick="change(event)">
+				</div>
+			</div>	</div>
+	</div>
+</div>
+<div id="id01" class="modal">	  
+	  <form class="modal-content animate" action="/action_page.php">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	    </div>
+
+	    <div class="container">
+	      <label><b>Username</b></label>
+	      <input type="text" placeholder="Enter Username" name="uname" required>
+
+	      <label><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+	        
+	      <button type="submit">Log in</button>
+	      <button type="submit" id = "sign_in">Sign in</button>
+	      <input type="checkbox" checked="checked"> Remember me
+	    </div>
+
+	    <div class="container" style="background-color:#BCECFF">
+	      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+	    </div>
+	  </form>
+	</div>
+	<div id="id_buy" class="modal">
+		<div class="options_sell">
+			  <span onclick="document.getElementById('id_buy').style.display='none'" style="color:#6919FF" class="close" title="Close Modal">&times;</span>
+		 <div class="submit">Find the car of your dream</div>
+			<div class="options_sell1">
+				<p>Choose category
+				<select>
+					<option>Not selected</option>
+					<option value="new">New car</option>
+	  				<option value="used">Used car</option>
+				</select></p>
+				<p> Brand and model
+				<select>
+					<option>Not selected</option>
+	  				<option value="bmw">BMW</option>
+	  				<option value="mercedes">Mercedes</option>
+	  				<option value="subaru">Subaru</option>
+	  				<option value="audi">Audi</option>
+	  				<option value="toyota">Toyota</option>
+					<option value="volvo">Volvo</option>
+	  				<option value="hyundai">Hyundai</option>
+	  				<option value="nissan">Nissan</option>
+	  				<option value="lada">Lada</option>
+	  				<option value="honda">Honda</option>
+	  				<option value="lexus">Lexus</option>
+				</select>
+				<select>
+					<option>Not selected</option>
+					<option value="all_models">All models</option>
+				</select>
+				</p>
+				<p> Price
+					<select>
+					<option>Not selected</option>
+					<option value="volvo">No limit </option>
+	  				<option value="saab">10,000$</option>
+	  				<option value="saab">20,000$</option>
+	  				<option value="saab">30,000$</option>
+	  				<option value="saab">40,000$</option>
+	  				<option value="saab">80,000$</option>
+	  				<option value="saab">100,000$</option>
+	  				<option value="saab">250,000$</option>
+	  				<option value="saab">500,000$</option>
+				</select>
+				</p>
+				<p> Year of manifacture
+					<input type="number" id="year" name="year">
+				</p>
+				<p> Mileage
+				<select>
+					<option>Not selected</option>
+					<option value="volvo">No limit of car mileage</option>
+	  				<option value="saab">10,000km</option>
+	  				<option value="saab">20,000km</option>
+	  				<option value="saab">30,000km</option>
+	  				<option value="saab">40,000km</option>
+	  				<option value="saab">80,000km</option>
+	  				<option value="saab">100,000km</option>
+	  				<option value="saab">250,000km</option>
+	  				<option value="saab">500,000km</option>
+				</select>
+				</p>
+				<p>
+					City
+					<select>
+					<option>Not important</option>
+	  				<option value="saab">Almaty</option>
+	  				<option value="saab">Astana</option>
+	  				<option value="saab">Ust'-Kamenogorsk</option>
+	  				<option value="saab">Pavlodar</option>
+	  				<option value="saab">Taraz</option>
+	  				<option value="saab">Shymkent</option>
+	  				<option value="saab">Aktau</option>
+	  				<option value="saab">Oral</option>
+					</select>
+				</p>
+
+				<button id="button_search">Search</button>	
+	</div>
+	</div>
+</div>
+	<div id="id_sell" class="modal">
+		<div class="options_sell">
+			<span onclick="document.getElementById('id_sell').style.display='none'" style="color:#6919FF;" class="close" title="Close Modal">&times;</span>
+		 <div class="submit">Submit an ad</div>
+			<div class="options_sell1">
+				<p>Choose category
+				<select>
+					<option>Not selected</option>
+					<option value="new">New car</option>
+	  				<option value="used">Used car</option>
+				</select></p>
+				<p> Brand and model
+				<select>
+					<option>Not selected</option>
+	  				<option value="bmw">BMW</option>
+	  				<option value="mercedes">Mercedes</option>
+	  				<option value="subaru">Subaru</option>
+	  				<option value="audi">Audi</option>
+	  				<option value="toyota">Toyota</option>
+					<option value="volvo">Volvo</option>
+	  				<option value="hyundai">Hyundai</option>
+	  				<option value="nissan">Nissan</option>
+	  				<option value="lada">Lada</option>
+	  				<option value="honda">Honda</option>
+	  				<option value="lexus">Lexus</option>
+				</select>
+				<select>
+					<option>Not selected</option>
+					<option value="all_models">All models</option>
+				</select>
+				</p>
+				<p> Price
+					<input type="number" id="price1" name="price">
+				</p>
+				<p> Year of manifacture
+					<input type="number" id="year" name="year">
+				</p>
+				<p>Upload a photo
+	   					<input type="file" id="upload1" name="f">
+	   					<input type="submit" id = "send1" value="Send">
+	   				
+	  			</p>
+				<button id="button_search">Submit</button>
+			</div>
+	</div>
+</div>
+<div id ="id_about" class="modal">
+	 <div class="about">
+	 	<span onclick="document.getElementById('id_about').style.display='none'" style="color:#6919FF;" class="close" title="Close Modal">&times;</span>
+		  	<h1>About Us</h1>
+		  	<p>This site is a leading online destination that helps car shoppers and owners navigate every turn of car ownership. A pioneer in automotive classifieds, the company has evolved into one of the largest digital automotive platforms, connecting consumers with local dealers across the country anytime, anywhere. Through trusted expert content, on-the-lot mobile app features, millions of new and used vehicle listings, a comprehensive set of research tools and the largest database of consumer reviews in the industry, site helps shoppers buy, sell and service their vehicles.</p>
+	  </div>
+</div>
+<script>
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script >function change(event){
+	document.getElementById("big").src = event.currentTarget.src;
+}</script>
+</body>
+<footer>
+	<div class = "foot">©2017 Yerassyl Nurlanov. All rights reserved</div>
+</footer>
+</html>
